@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title></title>
+		<title>Mushroom Mania</title>
 			<meta charset="utf-8">
-<!-- 			<link rel="stylesheet" href="css/normalize.css">
- -->			<link rel="stylesheet" type="text/css" href="css/styles.css">
+			<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 	
-	<body>
-		<wrapper>
+	<body ng-app="mushroomApp">
+
 			<header>
-				<h1></h1>
+				<h1>Mushroom Mania</h1>
 			</header>
-			
-			<form>
-				<input type="text" name=""></input><br>
-				<input type="radio" name="" value="">Poisonous<br>
-  			<input type="radio" name="" value="">Non-Poisonous<br>
-				<button id=submitButton>SUBMIT</button>
-			</form>
-			
-			
+			<div id="inputForm">
+				<form>
+					<input type="text" name=""></input><br>
+					<input id="poison" type="radio" name="" value="">Poisonous<br>
+	  			<input type="radio" name="" value="">Non-Poisonous<br>
+					<button id=submitButton type="button">SUBMIT</button>
+				</form>
+			</div>
+			<h2>Mushrooms</h2>
+			<div ng-include="'paritals/shroomSale.html'"></div>
+
+
+
 			<footer></footer>
 			
-		</wrapper><!--/.wrapper-->
-		<script type="text/javascript" src="javascripts/main.js"></script>
+		<script src="lib/node_modules/angular.min.js"></script>
+		<script src="lib/node_modules/angular-route/angular-route.min.js"></script>
+		<script src="app/app.js"></script>
+		<script src="app/factories/mushroomFactory.js"></script>
+		<script src="app/controllers/mushroomCtrl.js"></script>
 	</body>
 	
 </html>
+
+
+
