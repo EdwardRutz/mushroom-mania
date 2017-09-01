@@ -9,7 +9,7 @@ app.config(function($routeProvider){
 		templateUrl: 'partials/greeting.html'
 	}).
 	when('/showall', {
-		templateUrl: 'partials/flavorlist.html',
+		templateUrl: 'partials/shroomList.html',
 		controller: "mushroomCtrl"
 	}).
 	otherwise('/');

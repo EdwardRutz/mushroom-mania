@@ -7,26 +7,31 @@
 	</head>
 	
 	<body ng-app="mushroomApp">
-
 			<header>
-				<h1>Mushroom Mania</h1>
+			<div ng-include="'partials/greeting.html'"></div>
 			</header>
+
 			<div id="inputForm">
 				<form>
+					<label for="poison">Search Mushrooms: </label>
+					<br>
 					<input type="text" name=""></input><br>
-					<input id="poison" type="radio" name="" value="">Poisonous<br>
+					<input type="radio" id="poison" name="" value="" style="color: #FF0000">Poisonous<br>
 	  			<input type="radio" name="" value="">Non-Poisonous<br>
-					<button id=submitButton type="button">SUBMIT</button>
+					<button id="submitButton" type="button">SUBMIT</button>
 				</form>
 			</div>
-			<h2>Mushrooms</h2>
-			<div ng-include="'paritals/shroomSale.html'"></div>
 
+			<div ng-include="'partials/shroomSale.html'"></div>
+
+			<img src="images/shroom2.jpeg" id="shroom2Img">
+			
+			<div ng-include="'partials/shroomList.html'"></div>
 
 
 			<footer></footer>
 			
-		<script src="lib/node_modules/angular.min.js"></script>
+		<script src="lib/node_modules/angular/angular.min.js"></script>
 		<script src="lib/node_modules/angular-route/angular-route.min.js"></script>
 		<script src="app/app.js"></script>
 		<script src="app/factories/mushroomFactory.js"></script>

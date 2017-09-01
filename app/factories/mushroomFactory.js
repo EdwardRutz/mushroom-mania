@@ -3,8 +3,8 @@ console.log("mushroomFactory");
 
 //must use the word "function" and not a fat arrow
 app.factory("mushroomFactory", function($q, $http){
-	let getShrooms = () => {
-		let shrooms = [];
+	let getShroom = () => {
+		let shroom = [];
 		return $q ((resolve, reject) => {
 			$http.get("./data/mushroomData.json")
 			.then((shroomObject) => {
@@ -18,8 +18,8 @@ app.factory("mushroomFactory", function($q, $http){
 	};
 
 	let getOneShroom = ()=> {
-		console.log("getOneFlavor");
+		console.log("getOneShroom");
 	};
 	
-	return {getShrooms};
+	return {getShroom};
 }); 

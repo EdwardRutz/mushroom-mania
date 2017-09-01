@@ -17,7 +17,7 @@ You will need:
 
 - [X] An Angular application module.
 - [X] One controller defined in your application. The controller will load the JSON with an XHR call using the `$http` function that Angular provides.
-- [ ] One partial bound to the controller.
+- [X] One partial bound to the controller.
 - [ ] Several directives will be helpful. `ng-repeat`, `ng-click`, and the `filter` property on the `ng-repeat`.
 - [ ] Load the JSON below into a new Firebase application rather than reading it from a local file.
 - [ ] Put the JSON object into `$scope.mushrooms` and bind that variable in your partial.
