@@ -2,16 +2,12 @@
 
 var app = angular.module("mushroomApp", ['ngRoute']);
 
-app.config(function($routeProvider){
-
-	$routeProvider.
-	when('/', {
-		templateUrl: 'partials/greeting.html'
-	}).
-	when('/showall', {
-		templateUrl: 'partials/shroomList.html',
-		controller: "mushroomCtrl"
-	}).
-	otherwise('/');
-
-});
+app.config(["$routeProvider",
+	function($routeProvider) {
+		$routeProvider.
+		when('/', {
+			templateUrl: 'partials/shroomList.html',
+			controller: 'mushroomCtrl',
+		}).
+		otherwise('/');
+}]);
