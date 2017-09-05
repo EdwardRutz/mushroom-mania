@@ -22,20 +22,32 @@
 				</form>
 			</div>
 
-			<div ng-include="'partials/shroomSale.html'"></div>
-
-			<!-- <img src="images/shroom2.jpeg" id="shroom2Img"> -->
+<!-- <div ng-include="'partials/shroomSale.html'"></div> -->			
+			<!-- <div ng-include="'partials/greeting.html'"></div>
+			<img src="images/shroom2.jpeg" id="shroom2Img"> -->
 			
-			<div ng-include="'partials/shroomList.html'"></div>
+			<div ng-view></div>
 
 
 			<footer></footer>
 			
-		<script src="lib/node_modules/angular/angular.min.js"></script>
-		<script src="lib/node_modules/angular-route/angular-route.min.js"></script>
-		<script src="app/app.js"></script>
-		<script src="app/factories/mushroomFactory.js"></script>
-		<script src="app/controllers/mushroomCtrl.js"></script>
+		<script src="./lib/node_modules/angular/angular.min.js"></script>
+		<script src="./lib/node_modules/angular-route/angular-route.min.js"></script>
+
+
+<!-- FIREBASE -->
+		<script type="text/javascript" src="./lib/node_modules/firebase/firebase.js"></script>
+		<script src="./app/values/fbCred.js"></script>
+
+<script src="./app/app.js"></script>
+
+
+	<!-- FACTORIES -->
+		<script src="./app/factories/mushroomFactory.js"></script>
+
+
+	<!-- CONTROLLERS -->
+		<script src="./app/controllers/mushroomCtrl.js"></script>
 	</body>
 	
 </html>
