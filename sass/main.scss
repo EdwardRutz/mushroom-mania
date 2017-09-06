@@ -6,9 +6,17 @@ header {
 	text-align: center;
 	font-style: italic;
 }
-body {
+
+hr {
+    border: 1px;
+    border-style: solid;
+    border-color: #D2B48C;
 }
-.announce{
+
+.listTitle {
+	color: #654321;
+}
+.announce {
 	margin-left: 50px;
 	border-style: dashed;
 	width: 23%;
@@ -17,26 +25,21 @@ body {
 	float: left;
 	display: block;
 }
-
-.panel {
-    background-color: #d2b48c; 
-}
-
-#shroom2Img {
-	float: right;
-	display: inline-block;
-}
 #inputForm {
 	display: block;
 	width: 700px ;
   	margin: 60px 10px 30px 600px;
 }
-#poison {
-	color: red;
-}
 #name {
 	text-transform: uppercase;
 	font-weight: bolder;
 	font-size: 1.25em;
-
+	color: #654321;
 }
+
+
+// #poison {
+// 	color: red;
+// 	font-weight: bold;
+// }
+
