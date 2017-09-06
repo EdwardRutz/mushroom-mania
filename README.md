@@ -1,4 +1,4 @@
-# Mushroom Mania
+# [X] Mushroom Mania
 Using AngularJS, create an application with a single view and with data in firebase.
 
 ## Requirements
