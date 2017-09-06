@@ -29,8 +29,8 @@ You will need:
 - [X] Data mushroomData.json
 
 ## Sources
-[Angular Docs](https://docs.angularjs.org/guide)
-[Bootstrap Panels](https://www.w3schools.com/Bootstrap/bootstrap_panels.asp)
+- [Angular Docs](https://docs.angularjs.org/guide)
+- [Bootstrap Panels](https://www.w3schools.com/Bootstrap/bootstrap_panels.asp)
 
 
 
