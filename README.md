@@ -1,6 +1,5 @@
 # Mushroom Mania
-Create an application with a single view with data in firebase.
-
+Using AngularJS, create an application with a single view and with data in firebase.
 
 ## Requirements
 
