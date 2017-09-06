@@ -6,6 +6,7 @@ app.config(["$routeProvider",
 	function($routeProvider) {
 		$routeProvider.
 		when('/', {
+			//templateUrl: 'partials/greeting.html',
 			templateUrl: 'partials/shroomList.html',
 			controller: 'mushroomCtrl',
 		}).
