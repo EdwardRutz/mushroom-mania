@@ -1,16 +1,25 @@
 <article class="">
 
 	<header><h1>List of Mushrooms</h1></header>
+	<br>
 
 	<section>
-
-		<div ng-repeat="shroom in shroomArray">
-					 <!-- the # prevents angular from preventing the page from refreshing  -->
-			<div>{{shroom.name}} {{shroom.description}}</div>
-
-
-		</div>
-
+	 <div class="row panel panel-default">
+		 <div  class="panel-body">
+				<div ng-repeat="shroom in shroomArray">
+		      <span>
+		          <div id="name" class="col-xs-1.5">{{shroom.name}}</div>
+		          <div class="col-xs-10.5">{{shroom.description}}</div>
+		          <hr style="width:100%; height:2px; color:#000000;">
+		      </span>
+		 	 </div> 
+	 	  <div  class="panel-body">
+	 	</div>
 	</section>
 
 </article>
+
+					 <!-- the # prevents angular from preventing the page from refreshing  -->
+			<!-- <div>{{shroom.name}}</div>
+			<div>{{shroom.edible}}</div>
+			<div>{{shroom.description}}</div> -->
