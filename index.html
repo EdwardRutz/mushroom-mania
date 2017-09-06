@@ -3,7 +3,8 @@
 	<head>
 		<title>Mushroom Mania</title>
 			<meta charset="utf-8">
-			<link rel="stylesheet" type="text/css" href="css/styles.css">
+			<link rel="stylesheet" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	
 	<body ng-app="mushroomApp">
@@ -15,39 +16,49 @@
 				<form>
 					<label for="poison">Search Mushrooms: </label>
 					<br>
-					<input type="text" name=""></input><br>
-					<input type="radio" id="poison" name="" value="" style="color: #FF0000">Poisonous<br>
-	  			<input type="radio" name="" value="">Non-Poisonous<br>
+					<input type="text" name="" placeholder="Shroom Name"></input><br><br>
+	  			<input type="radio" value="">  Non-Poisonous</input><br>
+					<input type="radio" >  Poisonous</input> <br><br>
 					<button id="submitButton" type="button">SUBMIT</button>
 				</form>
 			</div>
+				<br>
 
-<!-- <div ng-include="'partials/shroomSale.html'"></div> -->			
+		
+			
+
+<!--<div ng-include="'partials/shroomSale.html'"></div>	-->		
 			<!-- <div ng-include="'partials/greeting.html'"></div>
 			<img src="images/shroom2.jpeg" id="shroom2Img"> -->
 			
-			<div ng-view></div>
-
+			<div id="columns">
+				<div ng-view></div>
+			</div>
 
 			<footer></footer>
-			
+
+
+	<!-- SCRIPTS -->		
 		<script src="./lib/node_modules/angular/angular.min.js"></script>
 		<script src="./lib/node_modules/angular-route/angular-route.min.js"></script>
+		<script type="text/javascript" src="./lib/node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="./lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="./app/app.js"></script>
 
 
-<!-- FIREBASE -->
+		<!-- FIREBASE -->
 		<script type="text/javascript" src="./lib/node_modules/firebase/firebase.js"></script>
 		<script src="./app/values/fbCred.js"></script>
 
-<script src="./app/app.js"></script>
 
 
-	<!-- FACTORIES -->
+		<!-- FACTORIES -->
 		<script src="./app/factories/mushroomFactory.js"></script>
 
 
-	<!-- CONTROLLERS -->
+		<!-- CONTROLLERS -->
 		<script src="./app/controllers/mushroomCtrl.js"></script>
+
 	</body>
 	
 </html>
